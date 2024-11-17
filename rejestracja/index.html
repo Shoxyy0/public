@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internetowa Księgarnia</title>
+    <link rel="stylesheet" href="/assets/css/style-rejestracja.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo2.png" />
+  </head>
+  <body>
+    <section class="container">
+      <section class="form">
+        <form id="loginForm" autocomplete="off">
+          <h2>Logowanie</h2>
+          <input
+            placeholder="Nazwa użytkownika"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+
+          <input
+            placeholder="Hasło"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+
+          <button type="submit">Zaloguj się</button>
+        </form>
+
+        <form id="registerForm">
+          <h2>Rejestracja</h2>
+          <input
+            placeholder="Nazwa użytkownika"
+            type="text"
+            id="newUsername"
+            name="username"
+            required
+          />
+          <input
+            placeholder="E-mail"
+            type="text"
+            id="newEmail"
+            name="email"
+            required
+          />
+          <input
+            placeholder="Hasło"
+            type="password"
+            id="newPassword"
+            name="password"
+            required
+          />
+
+          <button type="submit">Zarejestruj się</button>
+        </form>
+      </section>
+    </section>
+    <script src="/assets/js/rejestracja-logowanie.js"></script>
+  </body>
+</html>

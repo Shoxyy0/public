@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zapowiedzi</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo2.png" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <a href="/"><img src="/assets/images/logo.png" alt="" /></a>
+        <div class="custom_input">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="svg_icon bi-search"
+            viewBox="0 0 16 16"
+            data-darkreader-inline-fill=""
+            style="--darkreader-inline-fill: currentColor"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            ></path>
+          </svg>
+          <input
+            class="input"
+            id="szukaj-ksiazki"
+            type="text"
+            placeholder="Wyszukaj książkę"
+          />
+        </div>
+        <section>
+          <div id="profileMenu" class="dropdown">
+            <a id="loginLink" href="/rejestracja"> Zaloguj się </a>
+            <div id="dropdownContent" class="dropdown-content">
+              <a href="/profil">Profil</a>
+              <a href="#" id="logoutButton">Wyloguj się</a>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <nav>
+        <section>
+          <a href="#"> Książki </a>
+
+          <a href="#"> Premiery </a>
+
+          <a href="#"> Autorzy </a>
+
+          <a href="#"> Promocje </a>
+
+          <a href="#"> Zapowiedzi </a>
+        </section>
+      </nav>
+
+      <main>
+        <article class="polecane" id="klasyczne">
+          <section class="tytul">
+            <a href="#"><span>Zapowiedzi</span></a>
+          </section>
+          <section class="polecane-ksiazki-sekcja zapowiedzi">
+            <section class="reklama">reklama</section>
+            <div class="book-item">
+              <a
+                href="/zap-ks/zap-comp"
+                class="book-link"
+                style="text-decoration: none; color: inherit"
+              >
+                <img
+                  src="/assets/images/the-compromise.png"
+                  alt="Okładka The Compomise"
+                  class="okladka-ksiazki"
+                  style="width: 100%; height: auto; max-height: 200px"
+                />
+                <h2>The Compomise</h2>
+                <p>Autor: Sergei Dovlatov</p>
+                <p>Data wydania: 03.03.2025</p>
+              </a>
+            </div>
+            <div class="book-item">
+              <a
+                href="/zap-ks/zap-tft"
+                class="book-link"
+                style="text-decoration: none; color: inherit"
+              >
+                <img
+                  src="/assets/images/table-for-two.png"
+                  alt="Okładka The Compomise"
+                  class="okladka-ksiazki"
+                  style="width: 100%; height: auto; max-height: 200px"
+                />
+                <h2>Table for Two: Fictions</h2>
+                <p>Autor: Amor Towles</p>
+                <p>Data wydania: 17.06.2025</p>
+              </a>
+            </div>
+            <div class="book-item">
+              <a
+                href="/zap-ks/zap-fury"
+                class="book-link"
+                style="text-decoration: none; color: inherit"
+              >
+                <img
+                  src="/assets/images/the-fury.png"
+                  alt="Okładka The Compomise"
+                  class="okladka-ksiazki"
+                  style="width: 100%; height: auto; max-height: 200px"
+                />
+                <h2>The Fury</h2>
+                <p>Autor: Alex Michaelides</p>
+                <p>Data wydania: 12.05.2025</p>
+              </a>
+            </div>
+            <div class="book-item">
+              <a
+                href="/zap-ks/zap-nls"
+                class="book-link"
+                style="text-decoration: none; color: inherit"
+              >
+                <img
+                  src="/assets/images/n-l-s.png"
+                  alt="Okładka The Compomise"
+                  class="okladka-ksiazki"
+                  style="width: 100%; height: auto; max-height: 200px"
+                />
+                <h2>A Novel Love Story</h2>
+                <p>Autor: Ashley Poston</p>
+                <p>Data wydania: 12.11.2025</p>
+              </a>
+            </div>
+          </section>
+        </article>
+
+        <article id="newsletter">
+          <section id="newsletter-a">
+            <span
+              >Zapisz sie do <span id="newsletter-span">nestlettra!</span></span
+            >
+            <ul>
+              <li>Rabaty</li>
+              <li>Nowości</li>
+              <li>Wygoda</li>
+            </ul>
+          </section>
+
+          <section id="newsletter-b">
+            <span
+              >Zapisując się do newslettera, zgadzasz się na przetwarzanie
+              danych w celu otrzymywania informacji marketingowych. <br />
+              Możesz wycofać zgodę w każdej chwili, klikając link rezygnacji w
+              newsletterze. Dane przetwarzamy zgodnie z Polityką
+              Prywatności.</span
+            ><br />
+            <input id="input-a" placeholder="Podaj adres e-mail" />
+            <input id="input-b" type="button" value="Subskrybuj" value="" />
+          </section>
+        </article>
+      </main>
+      <footer>
+        <section>
+          <span title="saa">KONTAKT</span>
+          e-mail <br />
+          telefon
+        </section>
+
+        <section>
+          <span>WSPARCIE</span>
+          <a href="#">Pomoc</a>
+          <a href="#">Dostawa</a>
+          <a href="#">Regulamin</a>
+          <a href="#">Kontakt</a>
+          <a href="#">O nas</a>
+        </section>
+
+        <section>
+          <span>MEDIA SPOŁECZNOŚCIOWE</span>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </section>
+      </footer>
+    </section>
+  </body>
+</html>

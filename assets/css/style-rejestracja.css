@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(49, 54, 63);
+    margin: 2px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 5%;
+}
+
+.form {
+    border: 2px solid black;
+    padding-inline: 10%;
+    padding-block: 6%;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #eeeeee;
+    gap: 50px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    padding: 15px 10px;
+    min-width: 300px;
+    font-size: 20px;
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #eeeeee;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+
+input:focus {
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    box-shadow: 0px 10px 14px -7px #000000;
+    background: linear-gradient(to bottom, #222831 5%, #222831 100%);
+    background-color: #222831;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #222831 5%, #222831 100%);
+    background-color: #222831;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}

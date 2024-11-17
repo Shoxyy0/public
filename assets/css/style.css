@@ -1,0 +1,505 @@
+body {
+   background-color: rgb(49, 54, 63);
+   margin: 2px;
+   padding: 2px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+header {
+   flex: 0 0 100%;
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+   align-items: center;
+   z-index: 2;
+}
+
+header>section>div>a {
+   text-decoration: none;
+   color: #EEEEEE;
+   font-size: 140%;
+}
+
+header>a {
+   max-width: 100px;
+}
+
+header>a>img {
+   width: 250%;
+}
+
+.custom_input {
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.input {
+   font-size: 16px;
+   padding: 15px 10px;
+   min-width: 400px;
+   padding-left: 35px;
+   outline: none;
+   color: #EEEEEE;
+   border: 1px solid #eeeeee;
+   border-radius: 20px;
+   /* transition: .3s ease; */
+   background-color: rgb(49, 54, 63);
+}
+
+.input:focus {
+   border-radius: 10px;
+}
+
+.input::placeholder {
+   color: #eeeeee85;
+}
+
+.svg_icon {
+   position: absolute;
+   left: 10px;
+   fill: #EEEEEE;
+   width: 18px;
+   height: 18px;
+}
+
+header>section {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+
+header>section>a {
+   color: #eeeeee;
+   text-decoration: none;
+   font-size: 130%;
+   position: sticky;
+   top: 0;
+}
+
+nav {
+   position: sticky;
+   top: 0;
+   background-color: #222831;
+   flex: 0 1 100%;
+   margin-top: -10px;
+   z-index: 1;
+}
+
+nav>section {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+   padding-inline: 10px;
+   padding-block: 10px;
+   background-color: #222831;
+   gap: 15px;
+
+}
+
+nav>section>a {
+   min-width: 200px;
+   background-color: #222831;
+   color: #EEEEEE;
+   text-align: center;
+   text-decoration: none;
+   padding-inline: 5px;
+   padding-block: 20px;
+   transition: .2s ease;
+   font-size: 130%;
+   font-weight: bolder;
+}
+
+nav>section>a:hover {
+   background-color: #282f3a;
+   color: #76ABAE;
+   text-align: center;
+}
+
+main {
+   background-color: #333942;
+}
+
+.polecane {
+   flex: 1 1 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   padding-top: 50px;
+}
+
+.tytul {
+   flex: 0 0 100%;
+}
+
+.tytul>a {
+   text-decoration: none;
+   color: #EEEEEE;
+   font-size: 220%;
+   padding-left: 10%;
+   font-weight: bolder;
+}
+
+.polecane-ksiazki-sekcja {
+   flex: 0 0 100%;
+   display: flex;
+   flex-direction: row;
+}
+
+.reklama {
+   padding-left: 10.5%;
+}
+
+.polecane-ksiazki {
+   padding-left: 150px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+   padding-top: 5px;
+}
+
+.book-item {
+   flex: 1 1 23%;
+   text-align: center;
+   max-width: 20%;
+   color: #EEEEEE;
+}
+
+.book-link {
+   display: block;
+   text-decoration: none;
+   color: inherit;
+   transition: 0.2s ease;
+   text-align: center;
+   max-width: 80%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.book-link:hover {
+   background-color: #282f3a;
+   -webkit-box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 1);
+   -moz-box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 1);
+   box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 1);
+}
+
+.book-item img {
+   min-width: 180px;
+   max-width: 180px;
+   height: auto;
+   min-height: 271px;
+   max-height: 271px;
+}
+
+.book-details {
+   display: none;
+   position: absolute;
+   background: #fff;
+   padding: 10px;
+   border: 1px solid #ddd;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   z-index: 10;
+}
+
+.book-item:hover .book-details {
+   display: block;
+}
+
+#najnowsze {
+   flex: 1 1 100%;
+   padding-top: 50px;
+}
+
+#wyprzedaze {
+   flex: 1 1 100%;
+   display: flex;
+   justify-content: center;
+   gap: 150px;
+   padding-block: 100px;
+}
+
+#wyprzedaze>section {
+   padding-inline: 200px;
+   padding-block: 100px;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+
+
+#newsletter {
+   flex: 1 1 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-content: center;
+   padding-block: 100px;
+   gap: 150px;
+   background-color: #353c46;
+}
+
+
+#newsletter>section {
+   flex: 1 1 50%;
+}
+
+#newsletter-a {
+   padding-left: 130px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+#newsletter-a>span {
+   font-size: 170%;
+   color: #EEEEEE;
+}
+
+#newsletter-a>ul {
+   color: #76ABAE;
+   font-size: 150%;
+   list-style-type: square;
+}
+
+#newsletter-span {
+   background-color: #76ABAE;
+   font-size: 130%;
+   color: #282f3a;
+}
+
+#newsletter-b {
+   padding-right: 300px;
+}
+
+#newsletter-b span {
+   color: #EEEEEE;
+   display: block;
+   /* Zmieniamy na blokowy, aby łatwiej kontrolować szerokość */
+   max-width: 500px;
+   /* Ustal maksymalną szerokość, np. 300px */
+   word-wrap: break-word;
+   /* Zawija długie słowa */
+   word-break: break-word;
+   /* Przenosi długie słowa do nowej linii */
+   white-space: normal;
+   /* Umożliwia normalne zawijanie tekstu */
+}
+
+
+#input-a {
+   padding: 15px 10px;
+   min-width: 300px;
+   font-size: 20px;
+   border: 1px solid #000000;
+   background-color: transparent;
+   color: #eeeeee;
+   border-radius: 20px;
+   transition: .3s ease;
+}
+
+#input-a:focus {
+   border-radius: 10px;
+   outline: none;
+}
+
+
+#input-b {
+   padding: 15px 10px;
+   min-width: 300px;
+   font-size: 20px;
+   border: 1px solid #000000;
+   background-color: #76ABAE;
+   color: #eeeeee;
+   border-radius: 20px;
+   transition: .05s ease;
+   color: #282f3a;
+   cursor: pointer;
+}
+
+#input-b:active {
+   margin-top: 5px;
+   border-radius: 10px;
+   background-color: #49696b;
+   outline: none;
+}
+
+
+footer {
+   flex: 1 1 100%;
+   display: flex;
+   justify-content: center;
+   gap: 450px;
+}
+
+footer>section {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 5px;
+   color: #EEEEEE
+}
+
+footer>section>span {
+   font-weight: bolder;
+   font-size: 130%;
+   color: black;
+   padding-block: 20px;
+}
+
+footer>section>a {
+   color: #EEEEEE;
+   text-decoration: none;
+}
+
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   min-width: 160px;
+}
+
+/* Pokaż menu rozwijane na hover tylko, gdy użytkownik jest zalogowany */
+.logged-in:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown-content a:hover {
+   background-color: #f1f1f1;
+}
+
+#loginLink img {
+   width: 24px;
+   height: 24px;
+}
+
+
+
+
+/* wyniki-wyszukiwania*/
+
+#main-wyniki {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.sortowanie {
+   flex: 1 1 15%;
+   border-right: 1px solid #eeeeee;
+   color: #EEEEEE
+}
+
+#wyniki {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   flex: 1 1 80%;
+}
+
+#wyniki a {
+   max-width: 80%;
+   min-width: 80%;
+   color: #EEEEEE;
+   text-decoration: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 15px;
+   transition: .2s ease;
+}
+
+#wyniki a:hover {
+   background-color: #282f3a;
+   -webkit-box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 1);
+   -moz-box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 1);
+   box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 1);
+}
+
+#wyniki div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 20%;
+   /* lub odpowiednia szerokość */
+   box-sizing: border-box;
+}
+
+#wyniki h2 {
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   /* Maksymalna liczba linii */
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   /* Dodaje "..." na końcu uciętego tekstu */
+   max-height: 3em;
+   min-width: 20%;
+}
+
+
+#wyniki p {
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   /* Maksymalna liczba linii */
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+
+#scrollToTop {
+   position: fixed;
+   bottom: 60px;
+   right: 40px;
+   display: none;
+   /* Domyślnie ukryty */
+   width: 50px;
+   height: 50px;
+   background-color: #222831;
+   /* Możesz zmienić kolor */
+   color: #eeeeee;
+   border: none;
+   border-radius: 50%;
+   font-size: 24px;
+   cursor: pointer;
+   z-index: 1000;
+}
+
+#scrollToTop:hover {
+   background-color: #282f3a;
+   /* Zmiana koloru przy najechaniu */
+}
+
+.ocena {
+   max-width: 75%;
+   padding-bottom: 20px;
+}
